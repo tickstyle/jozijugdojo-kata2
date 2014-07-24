@@ -11,8 +11,11 @@ public class App {
 		
 		LocalDateTime tenMinutesFromNow = now.plus(10, ChronoUnit.MINUTES);
 		
-		System.out.println("Now did not changes, it is immutable (will never change): " + now);
+		System.out.println("Now did not change, it is immutable (will never change): " + now);
 		System.out.println("Ten minutes from now is: " + tenMinutesFromNow);
+		
+		LocalDateTime tenDaysFromNow = now.plus(10, ChronoUnit.DAYS);
+		System.out.println("Ten days from now is: " + tenDaysFromNow);
 	}
 
 }
